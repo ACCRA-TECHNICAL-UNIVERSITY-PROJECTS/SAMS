@@ -66,7 +66,7 @@ class StaffAPIController extends Controller
     }
 
     public function clockin(Request $request)
-{
+    {
     $validator = Validator::make(
         $request->all(), [
             'date' => 'required|date',

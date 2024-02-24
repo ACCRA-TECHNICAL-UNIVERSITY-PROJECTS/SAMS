@@ -56,6 +56,14 @@ return [
             'throw' => false,
         ],
 
+        [
+            // Other disk configurations...
+            'sessions' => [
+                'driver' => 'local',
+                'root' => storage_path('framework/sessions'),
+            ],
+        ]
+
     ],
 
     /*
@@ -72,5 +80,8 @@ return [
     'links' => [
         public_path('storage') => storage_path('app/public'),
     ],
+
+    
+    
 
 ];

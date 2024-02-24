@@ -23,17 +23,17 @@ class AdminController extends Controller
         ->first();
         $totalAttendanceCount = DB::table('staff_attendances')->count();
         // Get the authenticated user
-    $user = Auth::user();
-        // dd($user->role);
-    // Check the user's role and redirect accordingly
-    switch ($user->role) {
-        case 'HOD':
-            return view('admin_dash.index', ['totalStaffCount' => $totalStaffCount, 'notices' => $notices, 'totalAttendanceCount' => $totalAttendanceCount]);
-        case 'staff':
-            return view('user_dash.index', ['notices' => $notices, 'items' => $items]); // Adjust this to the user dashboard view
-        // Add more cases for other roles if needed
-    }
-}
+        $user = Auth::user();
+            // dd($user->role);
+        // Check the user's role and redirect accordingly
+        switch ($user->role) {
+            case 'HOD':
+                return view('admin_dash.index', ['totalStaffCount' => $totalStaffCount, 'notices' => $notices, 'totalAttendanceCount' => $totalAttendanceCount]);
+            case 'staff':
+                return view('user_dash.index', ['notices' => $notices, 'items' => $items]); // Adjust this to the user dashboard view
+            // Add more cases for other roles if needed
+            }
+        }
 
     public function admin_attendance(){
         $items = DB::table('leave_management')

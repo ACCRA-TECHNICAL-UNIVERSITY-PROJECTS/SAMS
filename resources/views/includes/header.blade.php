@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SAMS</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,7 +31,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js/dist/Chart.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-    
+
 
 
     <!-- Leaflet CSS -->
@@ -142,7 +147,6 @@
             background-color: #2D5A27;
             border-color: #2D5A27;
         }
-        
     </style>
 
 </head>
